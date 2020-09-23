@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eggxact.ly</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js" type="text/javascript">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <span class="bckg"></span>
+<header>
+  <h1>Home</h1>
+  <nav>
+    <ul>
+      <li>
+        <a href="javascript:void(0);" data-title="Diary">History</a>
+      </li>
+      <li>
+        <a href="javascript:void(0);" data-title="Timeline">Timeline</a>
+      </li>
+      <li>
+        <a href="javascript:void(0);" data-title="Settings">Settings</a>
+      </li>
+      <li>
+        <a href="javascript:void(0);" data-title="Search">Search</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="title">
+    <h2>Eggxact.ly</h2>
+    <a href="register.html">Sign Up</a>
+    <a href="login.html">Login</a>
+  </div>
+
+  <article class="larg">
+    <div>
+      <h3>40 Eggs GTIN: 00814141000221 <span class="entypo-down-open"></span></h3>
+      <p>0.0058 ETH <a href="createlabel.html">Buy</a></p>
+    </div>
+    <div>
+      <h3>203 Eggs GTIN: 00814141000238 <span class="entypo-down-open"></span></h3>
+      <p>0.012 ETH <a href="createlabel.html">Buy</a></p>
+    </div>
+    <div>
+      <h3>448 Eggs GTIN: 00814141000252 <span class="entypo-down-open"></span></h3>
+      <p>0.029 ETH <a href="createlabel.html">Buy</a></p>
+    </div>
+    <div>
+        <h3>100 Eggs GTIN: 00814141000276 <span class="entypo-down-open"></span></h3>
+        <p>0.019 ETH <a href="createlabel.html">Buy</a></p>
+      </div>
+    
+      <div>
+        <h3>120 Eggs GTIN: 00814141000283 <span class="entypo-down-open"></span></h3>
+        <p>0.079 ETH <a href="createlabel.html">Buy</a></p>
+      </div>
+      <div>
+        <h3>564 Eggs GTIN: 00814141000290 <span class="entypo-down-open"></span></h3>
+        <p>0.079 ETH <a href="createlabel.html">Buy</a></p>
+      </div>
+      <div>
+        <h3>12 Eggs GTIN: 00814141000306 <span class="entypo-down-open"></span></h3>
+        <p>0.079 ETH <a href="createlabel.html">Buy</a></p>
+      </div>
+      <div>
+        <h3>226 Eggs GTIN: 00814141000313 <span class="entypo-down-open"></span></h3>
+        <p>0.079 ETH <a href="createlabel.html">Buy</a></p>
+      </div>
+      <div>
+        <h3>756 Eggs GTIN: 00814141000320 <span class="entypo-down-open"></span></h3>
+        <p>0.079 ETH <a href="createlabel.html">Buy</a></p>
+      </div>
+      <div>
+        <h3>96 Eggs GTIN: 00814141000337 <span class="entypo-down-open"></span></h3>
+        <p>0.079 ETH <a href="createlabel.html">Buy</a></p>
+      </div>
+    
+  </article>
+</main>
+<script>
+    $(document).ready( function() {
+  
+  $('body').on("click", ".larg div h3", function(){
+    if ($(this).children('span').hasClass('close')) {
+      $(this).children('span').removeClass('close');
+    }
+    else {
+      $(this).children('span').addClass('close');
+    }
+    $(this).parent().children('p').slideToggle(250);
+  });
+  
+  $('body').on("click", "nav ul li a", function(){
+    var title = $(this).data('title');
+    $('.title').children('h2').html(title);
+  });
+});
+</script>
+</body>
+</html>
