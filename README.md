@@ -1,3 +1,3 @@
 # eggxactly
 marketplace for unmarket items
-[![Watch the video](http://i3.ytimg.com/vi/-oQXZOGyqyA/maxresdefault.jpg)](https://youtu.be/-oQXZOGyqyA)
+[![Watch the video](https://i.imgur.com/s56WrcF.gif)](https://youtu.be/-oQXZOGyqyA)
